@@ -1,6 +1,5 @@
 ﻿// Лабораторная работа #1
-// http://ipm.ifmo.ru/wp-content/uploads/2016/02/s2lab01.pdf
-// Вариант (null)
+// Румянцев Виктор P3100
 
 using System;
 using System.Collections;
@@ -13,6 +12,7 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
+            //ArrayList
             Console.WriteLine("=== ArrayList ===");
             AL arrayList = new AL();
             for(int i = 0; i < 255; i++)
@@ -24,7 +24,7 @@ namespace Lab1
             arrayList.Remove(7);
             Console.WriteLine("Count: {0}", arrayList.Count);
             Console.WriteLine("Binsearch for int 7: {0}", arrayList.BinarySearch(7));
-
+            //Stack
             Console.WriteLine("=== Stack ===");
             int n;
             Stack stack = new Stack();
@@ -39,7 +39,7 @@ namespace Lab1
             {
                 Console.WriteLine("Pop: {0}", stack.Pop());
             }
-
+            //Queue
             Console.WriteLine("=== Queue ===");
             Random rnd = new Random();
             Queue queue = new Queue();
@@ -51,7 +51,7 @@ namespace Lab1
             {
                 Console.WriteLine("queue[{0}] = {1}", i, string.Format("{0:0.00}", queue.Dequeue()));
             }
-
+            //hashTable
             Console.WriteLine("=== Hashtable ===");
             Hashtable hashTable = new Hashtable();
             for (int i = 0; i < 20; i++)
